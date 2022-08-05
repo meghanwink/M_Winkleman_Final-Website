@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+        
+ <!--Fonts-->
+
+  <title>deutsch</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;900&family=Khula&display=swap" rel="stylesheet">
+
+<!--End of Fonts-->
+
+<!--Scrollbar-->
+
+<div id="" style="overflow:hidden; height:2000px; color: black">
+
+<!--Scrollbar-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  </style>
+  </head>   
+
+<!--End of Scrollbar-->
+
+<!--Header Text-->
+
+<h1>deutsch</h1>
+<h2>LAND</h2>
+<h3>see</h3>
+<body style="background-color:black;">
+<header>
+    <style>
+      h1 {
+        color: white;
+        font-size: 50px;
+        font-family: chivo;
+        position: absolute;
+        top: 30px;
+        left: 10px
+        
+      }
+
+      h2 {
+        color: gold;
+        font-size: 50px;
+        font-family: chivo;
+        position: absolute;
+        top: 70px;
+        left: 72px;
+        }
+
+      h3 {
+        color: white;
+        font-size: 150px;
+        font-family: chivo;
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        letter-spacing: 3px;
+      }
+
+    </style>
+</header>
+
+<!--End of Header Text-->
+
+<!--Dropdown Menu-->
+
+<style>
+  /* Internal CSS */
+  body {
+    margin: 0;
+    /* content uses up full width and fill height of the browser */
+  }
+
+  nav {
+    background-color: white;
+    /* padding: top right bottom left */
+    padding: 50px 0px 0px 0px;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: block;
+    top: 0;
+    /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+    right: 0;
+    /* by default, always align to left */
+    /*right: 0;*/
+    /* if dropdown is set to right, dropdown-content should be set to right */
+  }
+
+  .dropbtn {
+    background-color: rgba(0, 102, 102, 0);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    line-height: normal;
+  }
+
+  .dropdown-content {
+    display: none;
+    /* set display to none, so dropdown menu won't show till hover dropdown */
+    position: absolute;
+    /* right: 0; */
+    right: 0;
+    /* if dropdown is set to right, dropdown-content should be set to right */
+    background-color: white;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*z-index: 1;*/
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .dropdown-content a:hover {
+    background-color: red;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover {
+    background-color:white;
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="http://127.0.0.1:5500/homepage.html">Homepage</a>
+        <a href="http://127.0.0.1:5500/eat-one.html">Eat</a>
+        <a href="http://127.0.0.1:5500/page-2-see.html">See</a>
+        <a href="http://127.0.0.1:5500/page-3-schedule.html">Schedule</a>
+        <a href="http://127.0.0.1:5500/page-4-videos.html">Videos</a>
+        <a href="http://127.0.0.1:5500/page-5-photos.html">Photos</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Inline CSS -->
+<section style="width: auto; height: 600px;"></section>
+</body>
+
+<!--End of Dropdown Menu-->   
+
+<!--Photo Carousel-->
+
+<head>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      margin-top: -200px;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: red;
+    }
+
+    .image-responsive {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slick-list {
+      margin: 0 -5px;
+    }
+
+    .slick-slide {
+      padding: 0 5px;
+    }
+
+    .your-class div p {
+      margin: 5px 0 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  
+
+  <div class="container">
+    <div class="your-class">
+      <div>
+        <img class="image-responsive" src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190614073732-12-potsdam-grotto-hall-germany-places-restricted.jpg" />
+        <p>
+          <b>potsdam.</b>
+        </p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190611180012-03-bergpark-germany-places-photos.jpg" />
+        <p>
+          <b>kassel.</b>
+        </p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F190611180114-04-bergpark-germany-places-photos.jpg" />
+        <p>
+          <b>blautopf.</b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      });
+    });
+  </script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+</body>
+
+<!--End of Photo Carousel-->
+
+<!--Text Scroll-->
+  
+ <title>Scrollable Area</title>
+  <style>
+    div.scrolling {
+      width: 61%;
+      height: 200px;
+      padding: 10px;
+      border: rgb(255, 255, 255) solid 3px;
+      color: white;
+      overflow: auto;
+      margin-left: 19%;
+      margin-top: 3%;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <div class="scrolling">
+      <p>
+        <b>potsdam</b>
+      </p>
+      <p>
+        Potsdam's Grotto Hall: the Prussian palaces of Sanssouci are the main attraction of Potsdam.
+        a few years ago, the Grotto Hall of the New Palace made its big debut, offering guests an exquisite
+        salon with marbled walls that feature intricate mosaics made of glistening bits of
+        seashell and stone.
+      </p>
+      <p>
+        <b>kassel</b>
+      </p>
+      <p>
+        Bergpark Wilhelmshohe: in 2013, UNESCO designated this hillside landscape park in Kassel
+        a World Heritage site. it features a 350-meter-long grand cascade that flows down to the neoclassical 
+        Wilhelmshohe structure and a towering copper statue of the Greek god Hercules.
+      </p>
+      <p>
+        <b>blautopf</b></p>
+      <p>
+        Blautopf: one of Germany's most colorful treasures is the Blautopf, a jewel-tonedspring in the city
+        of Blaubeuren that feeds into the Blau river. the bright blue pool is about 21 meters deep,
+        and surrounding sites - such as the Benedictine Blaubeuren Abby - make the view even more impressive. 
+      </p>
+      <p>dfhasjkdfhlkzsjdfhllaldkldkalklsddssdofiawefjssdfklajfaslkdcnapowe8frlksdcnmpaosweufralowkefjpaoweifuawoiefak;k;ldkl;dskl;k;dsakl;skl;kl;dszsjdfhlkajsdhflasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfkadjsfhalkdjsfhaskdjfhaskdjfhalkdjshkejsfsdklfhsakdjfhalkdjsfhalkdjsfaskdjfhaskdjfhaskdjfhsakdjfhaskdjfhaskdjfhaskdjlfhsakdjlfhaskdjfhaskdjf</p>
+    </div>
+  </article>
+</body>
+
+ 
+    <p>Potsdam's Grotto Hall: the Prussian palaces of Sanssouci are the main attraction of Potsdam. 
+      a few years ago, the Grotto Hall of the New Palace made its big debut, offering guests an 
+      exquisite salon with marbled walls that feature intricate mosaics made of glistening bits of 
+      seashell and stone.</p>
+
+      <p>kassel.</p> 
+      <p>Bergpark Wilhelmshöhe: in 2013, UNESCO designated this hillside landscape park in Kassel 
+        a World Heritage site. it features a 350-meter-long Grand Cascade that flows down to the 
+        Neoclassical Wilhelmshöhe structure and a towering copper statue of the Greek god Hercules.</p>
+
+        <p>potsdam.</p> 
+        <p>Blautopf: one of Germany's most colorful treasures is the Blautopf, a jewel-toned 
+          spring in the city of Blaubeuren that feeds into the Blau River. the bright blue pool 
+          is about 21 meters deep, and surrounding sites -- such as the Benedictine Blaubeuren Abbey
+           -- make the view even more impressive.</p>
+     
+    
+    </div>  
+  
+<!--End of Text Scroll-->
+  
+  
+</html>
